@@ -13,14 +13,20 @@ function clickHandler() {
     $('body').append('<div>' + '<p>' + clickCount + '</p>' + 
     '<button class="swap">' + 'swap' + '</button>' + 
     '<button class="delete">' + 'delete' + '</button>' + '</div>');
-    $('.swap').on('click', swapClick); //whoops these change all of them if more than one is generated
+    $('.swap').on('click', swapClick);
     $('.delete').on('click', deleteClick);
 }
 
 function swapClick()   {
     console.log('swap click??');
+    if( $(this).css('background', 'red') )    {
     $(this).parent().css('background', 'yellow');
+    }
+    else if ($(this).css('background', 'red')){
+        $(this).parent().css('background', 'yellow');
+    }
 } //add if else to change back to red ??
+//whooooops messed this function up, last SWAP BUTTON commit at least worked for first switch
 
 function deleteClick()   {
     console.log('delete click??');
