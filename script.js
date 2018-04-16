@@ -13,8 +13,8 @@ function clickHandler() {
     $('body').append('<div>' + '<p>' + clickCount + '</p>' + 
     '<button class="swap">' + 'swap' + '</button>' + 
     '<button class="delete">' + 'delete' + '</button>' + '</div>');
-    $('.swap').on('click', swapClick); //whoops these change all of them
-    $('.delete').on('click', deleteClick); //if more than one is generated
+    $('.swap').on('click', swapClick); //whoops these change all of them if more than one is generated
+    $('.delete').on('click', deleteClick);
 }
 
 function swapClick()   {
@@ -25,6 +25,6 @@ function swapClick()   {
 function deleteClick()   {
     console.log('delete click??');
     $(this).parent().remove();
-} 
+} //works!! add parent to swap
 
 
