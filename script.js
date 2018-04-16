@@ -13,5 +13,15 @@ function clickHandler() {
     $('body').append('<div>' + '<p>' + clickCount + '</p>' + 
     '<button id="swap">' + 'swap' + '</button>' + 
     '<button id="delete">' + 'delete' + '</button>' + '</div>');
+    $('#swap').on('click', swapClick);
+    $('#delete').on('click', deleteClick);
+}
+
+function swapClick()   {
+    console.log('swap click??');
+}
+
+function deleteClick()   {
+    console.log('delete click??');
 }
 
