@@ -19,8 +19,8 @@ function clickHandler() {
 
 function swapClick()   {
     console.log('swap click??');
-    $('div').css('background', 'yellow');
-} //will need an if else to change back to red
+    $(this).parent().css('background', 'yellow');
+} //add if else to change back to red ??
 
 function deleteClick()   {
     console.log('delete click??');
