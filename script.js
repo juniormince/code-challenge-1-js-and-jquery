@@ -19,6 +19,7 @@ function clickHandler() {
 
 function swapClick()   {
     console.log('swap click??');
+    $('div').css('background', 'yellow');
 }
 
 function deleteClick()   {
